@@ -4,26 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Code Quiz</title>
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <div class="nav-links">
-                    <li><a id="home-link" href="#">Home</a></li>
-                    <li><a id="highscore-link" href="#">View Highscores</a></li>
-                </div>
-                <li>Time: <span id="timer">0</span></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main id="main" onload="printHome()">
-        
-    </main>
-
-    <script src="/assets/script.js"></script>
+<body> 
+    <div class="scores"><a href="higherscores.html">view Highscores</a></div> 
+ 
+     <div class="timer">Time <span id="time">0</span></div> 
+ 
+    <div class="wrapper">
+        <div id="start-screen" class="start">
+            <h1>Javascript Quiz</h1>
+            <p>Try to answer the following Javascript Questions within the time limit. 
+                Keep in mind the incorrect answer will penalize your score/time by ten seconds! Good luck!
+             </p>
+          <button id="start">Start Quiz</button>
+          </div>
+ 
+          <div id="question" class="hide">
+              <h2 id="question-title"></h2>
+              <div id="choices" class="choices"></div>
+          </div>
+ 
+          <div id="end-screen" class="hide">
+              <h2>All done</h2>
+              <p> final score <span id="final-score"></span></p>
+          </div>
+ 
+          <p>
+              Enter initials: <input type="text" id="initials" max="3" />
+              <button id="submit">submit</button>
+          </p>
+ 
+          <div id="feedback" class="feedback-hide"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
