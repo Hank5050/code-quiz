@@ -36,8 +36,71 @@ function getCurrentQuestion() {
 //All my questions for the quiz
 var questions = [
     {
-        title: ""
-    }
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    {
+        title: "",
+        choice: ["",""],
+        answer: ""
+    },
+    
 ]
 
 //Add event listener for click to start the quiz
